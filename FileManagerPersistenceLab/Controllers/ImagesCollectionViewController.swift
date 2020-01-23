@@ -15,7 +15,13 @@ class ImagesCollectionViewController: UIViewController {
     
     @IBOutlet weak var searchQueryBar: UISearchBar!
     
-    var searchQuery = "hearts"
+    var searchQuery = "hearts" {
+        didSet {
+            DispatchQueue.main.async {
+                self.getImages(with: self.searchQuery)
+            }
+        }
+    }
     
     private var allImages = [Image](){
         didSet {
@@ -27,6 +33,8 @@ class ImagesCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        imagesCollectionView.backgroundColor = .magenta
         imagesCollectionView.dataSource = self
         imagesCollectionView.delegate = self
         

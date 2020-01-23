@@ -42,6 +42,8 @@ class ImageDetailViewController: UIViewController {
 
     private func updateUI() {
         
+        view.backgroundColor = .magenta
+        
         if removeButton == true {
             favoriteButton.isHidden = true
         }

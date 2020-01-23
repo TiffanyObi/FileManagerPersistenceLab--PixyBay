@@ -13,9 +13,9 @@ struct ImagesAPIClient {
 
 static func getImages(with searchQuery: String, completion: @escaping (Result<[Image],AppError>) -> () ) {
     
-    let searchQuery = searchQuery
+    let searchQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
     
-    let imagesEndpoint = "https://pixabay.com/api/?key=\(SecretKey.myKey)&q=\(searchQuery)"
+    let imagesEndpoint = "https://pixabay.com/api/?key=\(SecretKey.myKey)&q=\(searchQuery ?? "shoes")"
     
     guard let url = URL(string: imagesEndpoint) else {
       completion(.failure(.badURL(imagesEndpoint)))

@@ -169,6 +169,7 @@
                                         <connections>
                                             <outlet property="favoritedImageView" destination="B91-1c-sHN" id="Kh8-Wl-uG5"/>
                                             <outlet property="likesLabel" destination="ttG-Tl-KsB" id="tca-mI-yLi"/>
+                                            <outlet property="viewsLabel" destination="vWZ-N3-cfw" id="ywF-m9-Lcc"/>
                                             <segue destination="moX-OD-7TR" kind="presentation" identifier="favorites" id="vMC-az-c7b"/>
                                         </connections>
                                     </tableViewCell>
@@ -204,21 +205,21 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rRb-06-GZB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="343"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgA-5B-uG1">
-                                <rect key="frame" x="20" y="403" width="374" height="27.333333333333314"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgA-5B-uG1">
+                                <rect key="frame" x="20" y="403" width="374" height="32.666666666666686"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloads:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr4-qW-6Wy">
-                                <rect key="frame" x="20" y="517.66666666666663" width="374" height="27.333333333333371"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloads:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr4-qW-6Wy">
+                                <rect key="frame" x="20" y="528.33333333333337" width="374" height="32.666666666666629"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7St-gu-h5H">
-                                <rect key="frame" x="20" y="460.33333333333331" width="374" height="27.333333333333314"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7St-gu-h5H">
+                                <rect key="frame" x="20" y="465.66666666666669" width="374" height="32.666666666666686"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -229,9 +230,9 @@
                                     <action selector="favoriteButtonPressed:" destination="moX-OD-7TR" eventType="touchUpInside" id="2Qw-As-3ZC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Views:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWt-yI-BQL">
-                                <rect key="frame" x="20" y="575" width="374" height="27.333333333333371"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Views:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWt-yI-BQL">
+                                <rect key="frame" x="20" y="591" width="374" height="32.666666666666629"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -299,6 +300,6 @@
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="64" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TTp-5n-NLa"/>
+        <segue reference="vMC-az-c7b"/>
     </inferredMetricsTieBreakers>
 </document>

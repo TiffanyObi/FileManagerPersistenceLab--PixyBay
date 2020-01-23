@@ -27,6 +27,8 @@ class FavoritesTableViewController: UIViewController {
         super.viewDidLoad()
         favoritesTableView.delegate = self
         favoritesTableView.dataSource = self
+        favoritesTableView.backgroundColor = .magenta
+        
         loadFavoritedImages()
     }
     override func viewWillAppear(_ animated: Bool) {
