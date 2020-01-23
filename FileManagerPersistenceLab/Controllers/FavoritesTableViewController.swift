@@ -79,6 +79,21 @@ extension FavoritesTableViewController: UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+            
+        case .insert:
+            return
+        case .delete:
+            try? PersistenceHelper.shared.delete(event: indexPath.row)
+            favorites.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        default:
+            print("...")
+        }
+    }
+    
     
 }
 

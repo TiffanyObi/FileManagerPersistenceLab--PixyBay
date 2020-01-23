@@ -110,6 +110,6 @@ extension ImagesCollectionViewController: UISearchBarDelegate {
             getImages(with: "")
             return
         }
-        searchQuery = searchBar.text ?? "Gospel"
+        searchQuery = searchBar.text ?? "rainbow"
     }
 }
